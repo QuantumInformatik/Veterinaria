@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package veterinaria;
+package veterinaria.herencia.clases_no_abstractas;
 
 /**
  *
@@ -13,8 +13,10 @@ public class Mamifero extends Animal{
     private boolean poneHuevos;
     private boolean puedeSumergirseMuchoTiempo;
 
-    public Mamifero(String sexo, boolean castrado, boolean extinto) {
-        super(sexo, castrado, extinto);
+    public Mamifero(String sexo, boolean castrado) {
+        super(sexo, castrado);
+                this.setExtinto(false);
+
     }
     
     public Mamifero(){
@@ -22,7 +24,8 @@ public class Mamifero extends Animal{
     }
 
    
-
+    
+    
     public boolean isPoneHuevos() {
         return poneHuevos;
     }
@@ -50,9 +53,7 @@ public class Mamifero extends Animal{
                 + ", puedeSumergirseMuchoTiempo=" + puedeSumergirseMuchoTiempo + '}';
     }
 
-    
-    
-    
+      
     
     
     

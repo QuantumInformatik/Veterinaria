@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package veterinaria;
+package veterinaria.herencia.clases_no_abstractas;
 
 /**
  *
@@ -12,20 +12,15 @@ package veterinaria;
 public class Animal {
     protected String sexo;
     protected boolean castrado;
-    protected boolean extinto;
+    protected boolean extinto=true;
 
     public Animal() {
     }
     
-    
-
-    public Animal(String sexo, boolean castrado, boolean extinto) {
+    public Animal(String sexo, boolean castrado) {
         this.sexo = sexo;
         this.castrado = castrado;
-        this.extinto = extinto;
     }
-    
-    
 
     public String getSexo() {
         return sexo;
@@ -49,6 +44,11 @@ public class Animal {
 
     public void setExtinto(boolean extinto) {
         this.extinto = extinto;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" + "sexo=" + sexo + ", castrado=" + castrado + ", extinto=" + extinto + '}';
     }
     
     
