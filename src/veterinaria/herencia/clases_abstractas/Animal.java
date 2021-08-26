@@ -1,10 +1,10 @@
-package veterinaria.herencia.clases_no_abstractas;
+package veterinaria.herencia.clases_abstractas;
 
 
 /*
- * Una clase normal tambi�n se peude heredar
+ * Una clase abstracta se puede heredar pero no instanciar
  */
-public class Animal {
+public abstract class Animal {
 	
 	private String sexo;
 	private boolean castrado;
@@ -37,6 +37,7 @@ public class Animal {
 	}
 	
 
+	public abstract void desplazarse();
 	
 	
 	

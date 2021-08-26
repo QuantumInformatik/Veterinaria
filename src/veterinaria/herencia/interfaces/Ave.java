@@ -1,6 +1,6 @@
-package veterinaria.herencia.clases_no_abstractas;
+package veterinaria.herencia.interfaces;
 
-public class Ave extends Animal {
+public abstract class Ave extends Animal {
 	
 	private boolean puedeVolar;
 	private boolean depredador;
@@ -32,10 +32,13 @@ public class Ave extends Animal {
 		this.depredador = depredador;
 	}
 
-	
+	@Override
 	public void desplazarse() {
-		System.out.println("volando");
+		int a = 1, b=2;
+		System.out.println("El ave se desplaza volando"+(a+b));
+		
 	}
+	
 
 	@Override
 	public String toString() {

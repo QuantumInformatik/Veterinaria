@@ -1,6 +1,6 @@
-package veterinaria.herencia.clases_no_abstractas;
+package veterinaria.herencia.clases_abstractas;
 
-public class Mamifero extends Animal{
+public abstract class Mamifero extends Animal{
 	
 	private boolean poneHuevos;
 	private boolean puedeSumergirseMuchoTiempo; //
@@ -31,15 +31,20 @@ public class Mamifero extends Animal{
 		this.puedeSumergirseMuchoTiempo = puedeSumergirseMuchoTiempo;
 	}
 	
-	public void desplazarse() {
-		System.out.println("Nadando y caminando");
-	}
+	
 
 	@Override
 	public String toString() {
 		return "Mamifero [poneHuevos=" + poneHuevos 
 				+ ", \npuedeSumergirseMuchoTiempo=" + puedeSumergirseMuchoTiempo
 				+ "]";
+	}
+
+	@Override
+	public void desplazarse() {
+		int a = 5, b=3;
+		System.out.println("El mamifero se desplaza "+(a+b));
+		
 	}
 	
 	
